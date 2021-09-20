@@ -5,9 +5,9 @@ function toggleColor() {
   const body = document.getElementsByTagName("body")[0];
   isDark = !isDark;
   if (isDark) {
-    body.style.color = "black";
+    body.style.color = "brown";
   } else {
-    body.style.color = "white";
+    body.style.color = "yellow";
   }
 }
 
@@ -27,7 +27,7 @@ function shout() {
 // 4. This will fetch a random name from the internet, and replace your name with it!
 async function fetchRandomName() {
   try {
-    const response = await fetch("Faisal Hashim", {
+    const response = await fetch("https://randomuser.me/api/", {
       method: "GET",
     });
     const data = await response.json();
