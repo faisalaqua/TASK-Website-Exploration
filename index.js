@@ -27,7 +27,7 @@ function shout() {
 // 4. This will fetch a random name from the internet, and replace your name with it!
 async function fetchRandomName() {
   try {
-    const response = await fetch("https://randomuser.me/api/", {
+    const response = await fetch("Faisal Hashim", {
       method: "GET",
     });
     const data = await response.json();
